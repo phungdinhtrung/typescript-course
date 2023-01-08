@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "rootDir": ".",
+        "target": "ES6",
+        "module": "commonjs",
+        "outDir": "mjs",                // Thư mục chứa file js biên dịch từ ts
+        "removeComments": false,        // Loại bỏ comments
+        "watch": true                 
+    },
+    "exclude": [ // Các folder không biên dịch
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+    "include": [ // Các folder biên dịch ts sang js
+        "ts" 
+    ]
+}
